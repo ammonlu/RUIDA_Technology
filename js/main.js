@@ -161,10 +161,10 @@ jQuery(document).ready(function($) {
 	}
 
 	function loadingBarAnimation() {
-		if(newWidthValue + 5 < widthMax - 10) {
+		if(newWidthValue + 5 < widthMax/2) {
 			newWidthValue = newWidthValue + 1;
-		} else if(newWidthValue + 0.5 < widthMax) {
-			newWidthValue = newWidthValue + 0.5;
+		} else if(newWidthValue + 0.2 < widthMax) {
+			newWidthValue = newWidthValue + 0.2;
 		}
 
 		loadingBar.velocity({
