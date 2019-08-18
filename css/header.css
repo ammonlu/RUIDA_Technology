@@ -1,0 +1,138 @@
+.top {
+	height: 19vw;
+	background-color: #C0542B;
+	z-index: 100;
+	
+	/*border: 1px solid yellow;*/
+}
+
+.header {
+	background-color: #C0542B;
+	color: #ffffff;
+	height: 16.5vw;
+	margin: 0px;
+	padding-top: 4vw;
+	padding-left: 2.5vw;
+}
+
+.header .logo {
+	height: 6vw;
+	width: 6vw;
+	/*border: groove;
+	border-color: green;*/
+	vertical-align: middle;
+}
+
+.header .title {
+	font-size: 4vw;
+	font-weight: normal;
+	margin-left: 1vw;
+	letter-spacing: 1px;
+	word-spacing: 5px;
+	vertical-align: middle;
+	/*border: groove;
+	border-color: green;*/
+}
+
+
+/*nav*/
+
+.navigation {
+	background-color: #C0542B;
+	color: #ffffff;
+	margin: 0px;
+	height: 2.5vw;
+	padding-right: 2vw;
+	width: 100%;
+	z-index: 5000;
+	/*border: 1px solid yellow;*/
+}
+
+
+.navigation-item-box {
+	margin: 0px;
+	height: 2.2vw;
+}
+
+.navigationFixed {
+	background-color: rgba(192, 84, 43, 0.6);
+	/*#C0542B*/
+	color: #ffffff;
+	height: 3vw;
+	padding-right: 2vw;
+	padding-top: 0.5vw;
+	padding-bottom: 0.5;
+	width: 100%;
+	z-index: 5000;
+	position: fixed;
+	top: 0
+	/*border: 1px solid yellow;*/
+}
+
+.navigation ul,
+.navigationFixed ul {
+	list-style-type: none;
+	margin: 0px;
+	float: right;
+}
+
+.ib {
+	display: -moz-inline-stack;
+	display: inline-block;
+	zoom: 1;
+	*display: inline;
+	vertical-align: top;
+}
+
+.navigation-item {
+	font-size: 1.4vw;
+	margin: 0px;
+}
+
+.navigation-link {
+	display: block;
+	position: relative;
+	padding-left: 2vw;
+	padding-right: 2vw;
+	text-decoration: none;
+	color: #FFFFFF;
+	-webkit-transition: color .2s ease-in-out;
+	transition: color .2s ease-in-out;
+	padding-bottom: 0.3vw;
+}
+
+.navigation-link:before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	width: 0;
+	border-bottom: solid 0.1vw;
+}
+
+.navigation-link:before {
+	left: 0;
+}
+
+.navigation-link:hover {
+	color: greenyellow;
+	/*margin-top: -1vw;*/
+}
+
+.navigation-link:hover:before {
+	width: 100%;
+}
+
+.navigation-link:before {
+	-webkit-transition: width .2s ease-in-out;
+	transition: width .2s ease-in-out;
+}
+
+.loadingbar {
+	clear: both;
+	margin-top: 0.3vw;
+	position: absolute;
+	height: 0.2vw;
+	width: 1%;
+	background-color:#00F5FF;
+	z-index: 5000;
+}

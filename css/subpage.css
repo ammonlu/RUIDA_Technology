@@ -1,0 +1,253 @@
+.content {
+	/*overflow: hidden;*/
+	/*background: url(img/sub_bg.gif) no-repeat;*/
+	/*background-size: auto 112vw;*/
+	/*height: 112vw;*/
+	z-index: 1000;
+	/*border: 1px solid green;*/
+}
+
+.content-title {
+	height: 15vw;
+	padding-top: 2.5vw;
+	vertical-align: middle;
+	/*border: 1px solid red;*/
+}
+
+.content-title img {
+	height: 10vw;
+	width: 10vw;
+	margin-left: 4vw;
+	vertical-align: middle;
+	float: left;
+}
+
+.content-title .value {
+	color: #FFFFFF;
+	font-size: 2.5vw;
+	margin-left: 2vw;
+	padding-top: 3vw;
+	float: left;
+}
+
+.type-bar {
+	font-size: 16px;
+	display: block;
+	color: #B3B3B3;
+	height: 0;
+	width: 40vw;
+	line-height: 5vw;
+	padding-left: 5px;
+	border-width: 0px 5vw 5vw 0px;
+	border-style: none solid solid;
+	border-color: transparent transparent #B3B3B3;
+	/*B3B3B3*/
+	margin-left: 37.9vw;
+	padding-top: 2vw;
+}
+
+.type-bar span {
+	color: #FFFFFF;
+	font-size: 2.5vw;
+	margin-left: 2vw;
+}
+
+.subject {
+	font-size: 2.5vw;
+	display: flex;
+	padding-top: 1vw;
+}
+
+.subject:after {
+	content: '';
+	display: flex;
+	width: 2vw;
+	height: 3vw;
+	background-color: #C0552B;
+	-moz-box-shadow: 0.3vw 0.3vw 0px #393939;
+	/* 老的 Firefox */
+	box-shadow: 0.3vw 0.3vw 0px #393939;
+	margin-left: 0.5vw;
+	margin-top: -0.8vw;
+}
+
+.instructionTitle {
+	float: right;
+	margin-right: 2vw;
+	padding-top: 0.5vw;
+}
+
+.instruction {
+	height: 12vw;
+	padding-top: 1.5vw;
+	padding-right: 1vw;
+	/*border: 1px solid green;*/
+}
+
+.instruction-content {
+	float: right;
+	padding-left: 11vw;
+	padding-top: 0.5vw;
+	width: 58vw;
+	height: 12vw;
+	line-height: 2.1vw;
+	word-break: break-word;
+	font-size: 1.5vw;
+	/*border:  1px solid palevioletred;*/
+}
+
+.submenu {
+	height: 55vw;
+	width: 20vw;
+	float: left;
+	/*border: 1px solid red;*/
+}
+
+.submenu ul {
+	list-style-type: none;
+	line-height: 3.5vw;
+	font-size: 1.8vw;
+	color: #FFFFFF;
+	padding-left: 0vw;
+	padding-top: 1.8vw;
+	padding-right: 5vw;
+}
+
+.submenu ul li {
+	background: #C0552B;
+	display: block;
+	height: 3.7vw;
+	width: 17.5vw;
+	margin-bottom: 1.5vw;
+	/*border: 1px solid greenyellow;*/
+}
+.submenu ul li:hover{
+	width: 19vw;
+	cursor: hand;
+	
+	background-color: rgb(204,252,98);
+	
+	-webkit-transition: background-color 1;
+	-webkit-transition: color 1;
+	
+	-moz-transition: background-color 1;
+	-moz-transition: color 1;
+	
+	transition: background-color 1;
+	transition: color 1; 
+}
+
+.submenu ul li img {
+	height: 4.5vw;
+	width: 4.02vw;
+	margin-top: -0.4vw;
+	vertical-align: middle;
+	/*border:1px solid yellow;*/
+}
+
+.instruction-imgDiv {
+	height: 55vw;
+	width: 73vw;
+	float: right;
+	/*border: 1px solid blue;*/
+}
+
+.instruction-imgDiv .stage {
+	height: 32vw;
+	overflow: hidden;
+	padding-left: 11vw;
+	padding-top: 0vw;
+	/*border: 1px solid yellow;*/
+}
+
+.instruction-imgDiv .stage img {
+	height: 32vw;
+}
+
+.instruction-imgDiv .item {
+	height: 15vw;
+	float: left;
+	margin-top: 4vw;
+	/*margin-right: 1vw;*/
+	/*border: 1px solid yellow;*/
+	margin-left: 1vw;
+}
+
+.instruction-imgDiv .item img {
+	height: 15vw;
+	float: left;
+	margin-right: 1vw;
+	/*border: 1px solid yellow;*/
+}
+
+.data {
+	clear: both;
+	height: 29vw;
+	/*border: 1px solid palevioletred;*/
+}
+
+.data .subjectdiv {
+	float: right;
+	padding-right: 2vw;
+	padding-top: 5vw;
+	/*border:  1px solid darkturquoise;*/
+}
+
+.data .dataDetailDiv {
+	clear: both;
+	/*height: 10vw;*/
+	padding-left: 38vw;
+	/*	padding-top: 1vw;*/
+	/*border:  1px solid black;*/
+}
+
+.data .dataDetailDiv .dItem {
+	float: left;
+	width: 24vw;
+	margin-left: 3vw;
+	/*border: 1 solid yellow;*/
+}
+
+.data .dataDetail {
+	font-size: 16px;
+	display: block;
+	color: #B3B3B3;
+	height: 0;
+	width: 10vw;
+	line-height: 2.2vw;
+	/**高度**/
+	padding-left: 0px;
+	border-width: 0px 2.2vw 2.2vw 0px;
+	/**高度**/
+	border-style: none solid solid;
+	border-color: transparent transparent #C0552B;
+	/*B3B3B3*/
+	margin-left: 0vw;
+	padding-top: 2vw;
+}
+
+.data .dataDetail span {
+	color: #FFFFFF;
+	font-size: 1.5vw;
+	/*margin-left: 2vw;*/
+	float: right;
+	margin-right: 1vw;
+}
+
+#obliqueline-box {
+	position: absolute;
+	z-index: 2000;
+	margin-top: 18vw;
+	margin-left: 21vw;
+}
+
+.line,
+.BlowMolding,
+.automatic,
+.mould {
+	height: 112vw;
+}
+
+.index {
+	height: 358vw;
+}

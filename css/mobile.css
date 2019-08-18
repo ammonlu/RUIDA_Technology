@@ -1,0 +1,440 @@
+@media (device-height:480px) and (-webkit-min-device-pixel-ratio:2) {
+	/* 兼容iphone4/4s */
+	.bottom {
+		height: 19vw;
+		background-color: #C0542B;
+		padding-top: 6vw;
+		color: #FFFFFF;
+		vertical-align: middle;
+	}
+}
+
+@media (device-height:568px) and (-webkit-min-device-pixel-ratio:2) {
+	/* 兼容iphone5 */
+	.content {
+		z-index: 1000;
+		/*border: 1px solid green;*/
+		height: 135vw;
+	}
+	.line,
+	.BlowMolding,
+	.automatic,
+	.mould {
+		height: 135vw;
+	}
+	.height112 {
+		height: 135vw;
+		/*border: 1px solid yellow;*/
+	}
+	#trapezoidup {
+		height: 0;
+		width: 38vw;
+		border-top: 15vw solid black;
+		border-right: 15vw solid transparent;
+	}
+	#trapezoiddown {
+		height: 0;
+		width: 38vw;
+		border-bottom: 15vw solid black;
+		border-right: 15vw solid transparent;
+		margin-top: -2vw;
+	}
+	#rectangleup,
+	#rectangledown {
+		height: 22vw;
+		background: black;
+		width: 38vw;
+		/*border: 1px solid green;*/
+	}
+	#rectangledown {
+		height: 23vw;
+	}
+	#rectanglemiddle {
+		width: 25vw;
+		height: 65vw;
+		margin-top: -1.5vw;
+		background: black;
+		/*		border: 1px solid yellow;*/
+	}
+	.content-title {
+		height: 21vw;
+		padding-top: 4vw;
+		vertical-align: middle;
+		/*border: 1px solid red;*/
+	}
+	.instructionTitle {
+		float: right;
+		margin-right: 2vw;
+		padding-top: 3vw;
+	}
+	.instruction {
+		height: 14vw;
+		/*border: 1px solid green;*/
+	}
+	.instruction-content {
+		float: right;
+		color:#696969;
+		padding-left: 11vw;
+		padding-top: 0.5vw;
+		width: 58vw;
+		height: 12vw;
+		line-height: 2.5vw;
+		word-break: break-word;
+		font-size: 1.5vw;
+		/*border:  1px solid palevioletred;*/
+	}
+	.instruction-content span{
+		color: #696969;
+	}
+	.submenu ul {
+		list-style-type: none;
+		line-height: 4.5vw;
+		font-size: 1.8vw;
+		color: #FFFFFF;
+		padding-left: 0vw;
+		padding-top: 1.8vw;
+		padding-right: 5vw;
+	}
+	.instruction-imgDiv {
+		height: 65vw;
+		width: 73vw;
+		float: right;
+		/*border: 1px solid blue;*/
+	}
+	.instruction-imgDiv .stage {
+		height: 34vw;
+		overflow: hidden;
+		padding-left: 11vw;
+		padding-top: 0vw;
+		/*border: 1px solid yellow;*/
+	}
+	.instruction-imgDiv .stage img {
+		height: 34vw;
+	}
+	.instruction-imgDiv .item {
+		height: 16vw;
+		float: left;
+		margin-top: 7vw;
+		/*margin-right: 1vw;*/
+		/*border: 1px solid yellow;*/
+		margin-left: 1vw;
+	}
+	.data {
+		clear: both;
+		height: 34vw;
+		/*border: 1px solid palevioletred;*/
+	}
+	.data .dataDetailDiv {
+		clear: both;
+		/*height: 10vw;*/
+		padding-left: 39vw;
+		margin-top: 12vw;
+		/*	padding-top: 1vw;*/
+		/*border:  1px solid black;*/
+	}
+	.top {
+		height: 20.5vw;
+		background-color: #C0542B;
+		z-index: 100;
+	}
+	.header {
+		background-color: #C0542B;
+		color: #ffffff;
+		height: 17.8vw;
+		margin: 0px;
+		padding-top: 5vw;
+		padding-left: 2.5vw;
+	}
+	.bottom {
+		height: 22vw;
+		background-color: #C0542B;
+		padding-top: 6vw;
+		/*border: 1px solid green;*/
+		color: #FFFFFF;
+		vertical-align: middle;
+	}
+}
+
+@media (device-height:667px) and (-webkit-min-device-pixel-ratio:2) {
+	/* 兼容iphone6 */
+	.content {
+		z-index: 1000;
+		/*border: 1px solid green;*/
+		height: 135vw;
+	}
+	.line,
+	.BlowMolding,
+	.automatic,
+	.mould {
+		height: 135vw;
+	}
+	.height112 {
+		height: 135vw;
+		/*border: 1px solid yellow;*/
+	}
+	#trapezoidup {
+		height: 0;
+		width: 38vw;
+		border-top: 15vw solid black;
+		border-right: 15vw solid transparent;
+	}
+	#trapezoiddown {
+		height: 0;
+		width: 38vw;
+		border-bottom: 15vw solid black;
+		border-right: 15vw solid transparent;
+		margin-top: -2vw;
+	}
+	#rectangleup,
+	#rectangledown {
+		height: 22vw;
+		background: black;
+		width: 38vw;
+		/*border: 1px solid green;*/
+	}
+	#rectangledown {
+		height: 23vw;
+	}
+	#rectanglemiddle {
+		width: 25vw;
+		height: 65vw;
+		margin-top: -1.5vw;
+		background: black;
+		/*		border: 1px solid yellow;*/
+	}
+	.content-title {
+		height: 21vw;
+		padding-top: 4vw;
+		vertical-align: middle;
+		/*border: 1px solid red;*/
+	}
+	.instructionTitle {
+		float: right;
+		margin-right: 2vw;
+		padding-top: 3vw;
+	}
+	.instruction {
+		height: 14vw;
+		/*border: 1px solid green;*/
+	}
+	.instruction-content {
+		float: right;
+		padding-left: 11vw;
+		padding-top: 0.5vw;
+		width: 58vw;
+		height: 12vw;
+		line-height: 2.5vw;
+		word-break: break-word;
+		font-size: 1.5vw;
+		/*border:  1px solid palevioletred;*/
+	}
+	.submenu ul {
+		list-style-type: none;
+		line-height: 4.5vw;
+		font-size: 1.8vw;
+		color: #FFFFFF;
+		padding-left: 0vw;
+		padding-top: 1.8vw;
+		padding-right: 5vw;
+	}
+	.instruction-imgDiv {
+		height: 65vw;
+		width: 73vw;
+		float: right;
+		/*border: 1px solid blue;*/
+	}
+	.instruction-imgDiv .stage {
+		height: 34vw;
+		overflow: hidden;
+		padding-left: 11vw;
+		padding-top: 0vw;
+		/*border: 1px solid yellow;*/
+	}
+	.instruction-imgDiv .stage img {
+		height: 34vw;
+	}
+	.instruction-imgDiv .item {
+		height: 16vw;
+		float: left;
+		margin-top: 7vw;
+		/*margin-right: 1vw;*/
+		/*border: 1px solid yellow;*/
+		margin-left: 1vw;
+	}
+	.data {
+		clear: both;
+		height: 34vw;
+		/*border: 1px solid palevioletred;*/
+	}
+	.data .dataDetailDiv {
+		clear: both;
+		/*height: 10vw;*/
+		padding-left: 39vw;
+		margin-top: 12vw;
+		/*	padding-top: 1vw;*/
+		/*border:  1px solid black;*/
+	}
+	.top {
+		height: 20.5vw;
+		background-color: #C0542B;
+		z-index: 100;
+	}
+	.header {
+		background-color: #C0542B;
+		color: #ffffff;
+		height: 17.8vw;
+		margin: 0px;
+		padding-top: 5vw;
+		padding-left: 2.5vw;
+	}
+	.bottom {
+		height: 22.3vw;
+		background-color: #C0542B;
+		padding-top: 6vw;
+		/*border: 1px solid green;*/
+		color: #FFFFFF;
+		vertical-align: middle;
+	}
+}
+
+@media (device-height:736px) and (-webkit-min-device-pixel-ratio:2) {
+	/* 兼容iphone6 Plus */
+	.content {
+		z-index: 1000;
+		/*border: 1px solid green;*/
+		height: 135vw;
+	}
+	.line,
+	.BlowMolding,
+	.automatic,
+	.mould {
+		height: 135vw;
+	}
+	.height112 {
+		height: 135vw;
+		/*border: 1px solid yellow;*/
+	}
+	#trapezoidup {
+		height: 0;
+		width: 38vw;
+		border-top: 15vw solid black;
+		border-right: 15vw solid transparent;
+	}
+	#trapezoiddown {
+		height: 0;
+		width: 38vw;
+		border-bottom: 15vw solid black;
+		border-right: 15vw solid transparent;
+		margin-top: -2vw;
+	}
+	#rectangleup,
+	#rectangledown {
+		height: 22vw;
+		background: black;
+		width: 38vw;
+		/*border: 1px solid green;*/
+	}
+	#rectangledown {
+		height: 23vw;
+	}
+	#rectanglemiddle {
+		width: 25vw;
+		height: 65vw;
+		margin-top: -1.5vw;
+		background: black;
+		/*		border: 1px solid yellow;*/
+	}
+	.content-title {
+		height: 21vw;
+		padding-top: 4vw;
+		vertical-align: middle;
+		/*border: 1px solid red;*/
+	}
+	.instructionTitle {
+		float: right;
+		margin-right: 2vw;
+		padding-top: 3vw;
+	}
+	.instruction {
+		height: 14vw;
+		/*border: 1px solid green;*/
+	}
+	.instruction-content {
+		float: right;
+		padding-left: 11vw;
+		padding-top: 0.5vw;
+		width: 58vw;
+		height: 12vw;
+		line-height: 2.5vw;
+		word-break: break-word;
+		font-size: 1.5vw;
+		/*border:  1px solid palevioletred;*/
+	}
+	.submenu ul {
+		list-style-type: none;
+		line-height: 4.5vw;
+		font-size: 1.8vw;
+		color: #FFFFFF;
+		padding-left: 0vw;
+		padding-top: 1.8vw;
+		padding-right: 5vw;
+	}
+	.instruction-imgDiv {
+		height: 65vw;
+		width: 73vw;
+		float: right;
+		/*border: 1px solid blue;*/
+	}
+	.instruction-imgDiv .stage {
+		height: 34vw;
+		overflow: hidden;
+		padding-left: 11vw;
+		padding-top: 0vw;
+		/*border: 1px solid yellow;*/
+	}
+	.instruction-imgDiv .stage img {
+		height: 34vw;
+	}
+	.instruction-imgDiv .item {
+		height: 16vw;
+		float: left;
+		margin-top: 7vw;
+		/*margin-right: 1vw;*/
+		/*border: 1px solid yellow;*/
+		margin-left: 1vw;
+	}
+	.data {
+		clear: both;
+		height: 34vw;
+		/*border: 1px solid palevioletred;*/
+	}
+	.data .dataDetailDiv {
+		clear: both;
+		/*height: 10vw;*/
+		padding-left: 39vw;
+		margin-top: 12vw;
+		/*	padding-top: 1vw;*/
+		/*border:  1px solid black;*/
+	}
+	.top {
+		height: 20.5vw;
+		background-color: #C0542B;
+		z-index: 100;
+	}
+	.header {
+		background-color: #C0542B;
+		color: #ffffff;
+		height: 17.8vw;
+		margin: 0px;
+		padding-top: 5vw;
+		padding-left: 2.5vw;
+	}
+	.bottom {
+		height: 22.3vw;
+		background-color: #C0542B;
+		padding-top: 6vw;
+		/*border: 1px solid green;*/
+		color: #FFFFFF;
+		vertical-align: middle;
+	}
+}

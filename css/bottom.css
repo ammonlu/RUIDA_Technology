@@ -1,0 +1,49 @@
+.bottom {
+	height: 18.5vw;
+	background-color: #C0542B;
+	padding-top:6vw;
+	
+	/*border: 1px solid green;*/
+	
+	color: #FFFFFF;
+	
+	vertical-align: middle;
+	
+}
+
+
+.email {
+	word-spacing: 0.5vw;
+	font-size: 1.2vw;
+	float: left;
+	padding-left: 8vw;
+	/*border: 1px solid green;*/
+	
+}
+.email img{
+	height: 3.5vw;
+	width: 3.2vw;
+	vertical-align: middle;
+}
+.tel{
+	word-spacing: 0.5vw;
+	font-size: 1.2vw;
+	float: left;
+	width:50%;
+	text-align: right;
+	padding-right: 8vw;
+	/*border: 1px solid green;*/
+}
+.tel img{
+	height: 3vw;
+	width: 3vw;
+	vertical-align: middle;
+}
+.copyright {
+	text-align: center;
+	clear: both;
+	margin-top: 8vw;
+	font-size: 1.5vw;
+	
+	/*border: 1px solid green;*/
+}

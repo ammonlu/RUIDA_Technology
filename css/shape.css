@@ -1,0 +1,446 @@
+/*6斜杠*/
+
+.obliqueline {
+	border-radius: 10vw;
+	background-color: #A9A9A9;
+	/**#A9A9A9***/
+	height: 0.35vw;
+	width: 5.5vw;
+	/*margin-bottom: 1.2vw;*/
+	transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	/* IE 9 */
+	-moz-transform: rotate(-45deg);
+	/* Firefox */
+	-webkit-transform: rotate(-45deg);
+	/* Safari 和 Chrome */
+	-o-transform: rotate(-45deg);
+	/* Opera */
+	/*border: 1px solid green;*/
+}
+
+.left_laddershaped {
+	height: 0;
+	width: 9.5vw;
+	border-bottom: 0.5vw solid black;
+	border-left: 0.5vw solid transparent;
+	margin-top: 0.75vw;
+	opacity: 0.9;
+}
+
+.right_laddershaped {
+	height: 0;
+	width: 9.5vw;
+	border-bottom: 0.5vw solid black;
+	border-right: 0.5vw solid transparent;
+	margin-top: 0.75vw;
+	opacity: 0.9;
+}
+
+.cbg1 {
+
+	background-color: #A9A9A9;
+	-webkit-animation: bg-color1 5s infinite;
+	-moz-animation: bg-color1 5s infinite;
+	animation: bg-color1 5s infinite;
+}
+
+.cbg2 {
+
+	background-color: #A9A9A9;
+	-webkit-animation: bg-color2 5s infinite;
+	-moz-animation: bg-color2 5s infinite;
+	animation: bg-color2 5s infinite;
+}
+
+.cbg3 {
+
+	background-color: #A9A9A9;
+	-webkit-animation: bg-color3 5s infinite;
+	-moz-animation: bg-color3 5s infinite;
+	animation: bg-color3 5s infinite;
+}
+
+.cbg4 {
+
+	background-color: #A9A9A9;
+	-webkit-animation: bg-color4 5s infinite;
+	-moz-animation: bg-color4 5s infinite;
+	animation: bg-color4 5s infinite;
+}
+
+.cbg5 {
+
+	background-color: #A9A9A9;
+	-webkit-animation: bg-color5 5s infinite;
+	-moz-animation: bg-color5 5s infinite;
+	animation: bg-color5 5s infinite;
+}
+
+.cbg6 {
+
+	background-color: #A9A9A9;
+	-webkit-animation: bg-color6 5s infinite;
+	-moz-animation: bg-color6 5s infinite;
+	animation: bg-color6 5s infinite;
+}
+
+@-webkit-keyframes bg-color1 {
+	0% {
+		background-color: #FFFFFF;
+	}
+	9% {
+		background-color: #FFFFFF;
+	}
+	10% {
+		background-color: #A9A9A9;
+	}
+	100% {
+		background-color: #A9A9A9;
+	}
+}
+
+@-webkit-keyframes bg-color2 {
+	0% {
+		background-color: #A9A9A9;
+	}
+	9% {
+		background-color: #A9A9A9;
+	}
+	10% {
+		background-color: #FFFFFF;
+	}
+	19% {
+		background-color: #FFFFFF;
+	}
+	20% {
+		background-color: #A9A9A9;
+	}
+	100% {
+		background-color: #A9A9A9;
+	}
+}
+
+@-webkit-keyframes bg-color3 {
+	0% {
+		background-color: #A9A9A9;
+	}
+	19% {
+		background-color: #A9A9A9;
+	}
+	20% {
+		background-color: #FFFFFF;
+	}
+	29% {
+		background-color: #FFFFFF;
+	}
+	30% {
+		background-color: #A9A9A9;
+	}
+	100% {
+		background-color: #A9A9A9;
+	}
+}
+
+@-webkit-keyframes bg-color4 {
+	0% {
+		background-color: #A9A9A9;
+	}
+	29% {
+		background-color: #A9A9A9;
+	}
+	30% {
+		background-color: #FFFFFF;
+	}
+	39% {
+		background-color: #FFFFFF;
+	}
+	40% {
+		background-color: #A9A9A9;
+	}
+	100% {
+		background-color: #A9A9A9;
+	}
+}
+
+@-webkit-keyframes bg-color5 {
+	0% {
+		background-color: #A9A9A9;
+	}
+	39% {
+		background-color: #A9A9A9;
+	}
+	40% {
+		background-color: #FFFFFF;
+	}
+	49% {
+		background-color: #FFFFFF;
+	}
+	50% {
+		background-color: #A9A9A9;
+	}
+	100% {
+		background-color: #A9A9A9;
+	}
+}
+
+@-webkit-keyframes bg-color6 {
+	0% {
+		background-color: #A9A9A9;
+	}
+	49% {
+		background-color: #A9A9A9;
+	}
+	50% {
+		background-color: #FFFFFF;
+	}
+	59% {
+		background-color: #FFFFFF;
+	}
+	60% {
+		background-color: #A9A9A9;
+	}
+	100% {
+		background-color: #A9A9A9;
+	}
+}
+
+@-moz-keyframes bg-color1 {
+	0% {
+		background-color: #FFFFFF;
+	}
+	9% {
+		background-color: #FFFFFF;
+	}
+	10% {
+		background-color: #A9A9A9;
+	}
+	100% {
+		background-color: #A9A9A9;
+	}
+}
+
+@-moz-keyframes bg-color2 {
+	0% {
+		background-color: #A9A9A9;
+	}
+	9% {
+		background-color: #A9A9A9;
+	}
+	10% {
+		background-color: #FFFFFF;
+	}
+	19% {
+		background-color: #FFFFFF;
+	}
+	20% {
+		background-color: #A9A9A9;
+	}
+	100% {
+		background-color: #A9A9A9;
+	}
+}
+
+@-moz-keyframes bg-color3 {
+	0% {
+		background-color: #A9A9A9;
+	}
+	19% {
+		background-color: #A9A9A9;
+	}
+	20% {
+		background-color: #FFFFFF;
+	}
+	29% {
+		background-color: #FFFFFF;
+	}
+	30% {
+		background-color: #A9A9A9;
+	}
+	100% {
+		background-color: #A9A9A9;
+	}
+}
+
+@-moz-keyframes bg-color4 {
+	0% {
+		background-color: #A9A9A9;
+	}
+	29% {
+		background-color: #A9A9A9;
+	}
+	30% {
+		background-color: #FFFFFF;
+	}
+	39% {
+		background-color: #FFFFFF;
+	}
+	40% {
+		background-color: #A9A9A9;
+	}
+	100% {
+		background-color: #A9A9A9;
+	}
+}
+
+@-moz-keyframes bg-color5 {
+	0% {
+		background-color: #A9A9A9;
+	}
+	39% {
+		background-color: #A9A9A9;
+	}
+	40% {
+		background-color: #FFFFFF;
+	}
+	49% {
+		background-color: #FFFFFF;
+	}
+	50% {
+		background-color: #A9A9A9;
+	}
+	100% {
+		background-color: #A9A9A9;
+	}
+}
+
+@-moz-keyframes bg-color6 {
+	0% {
+		background-color: #A9A9A9;
+	}
+	49% {
+		background-color: #A9A9A9;
+	}
+	50% {
+		background-color: #FFFFFF;
+	}
+	59% {
+		background-color: #FFFFFF;
+	}
+	60% {
+		background-color: #A9A9A9;
+	}
+	100% {
+		background-color: #A9A9A9;
+	}
+}
+
+@keyframes bg-color1 {
+	0% {
+		background-color: #FFFFFF;
+	}
+	9% {
+		background-color: #FFFFFF;
+	}
+	10% {
+		background-color: #A9A9A9;
+	}
+	100% {
+		background-color: #A9A9A9;
+	}
+}
+
+@keyframes bg-color2 {
+	0% {
+		background-color: #A9A9A9;
+	}
+	9% {
+		background-color: #A9A9A9;
+	}
+	10% {
+		background-color: #FFFFFF;
+	}
+	19% {
+		background-color: #FFFFFF;
+	}
+	20% {
+		background-color: #A9A9A9;
+	}
+	100% {
+		background-color: #A9A9A9;
+	}
+}
+
+@keyframes bg-color3 {
+	0% {
+		background-color: #A9A9A9;
+	}
+	19% {
+		background-color: #A9A9A9;
+	}
+	20% {
+		background-color: #FFFFFF;
+	}
+	29% {
+		background-color: #FFFFFF;
+	}
+	30% {
+		background-color: #A9A9A9;
+	}
+	100% {
+		background-color: #A9A9A9;
+	}
+}
+
+@keyframes bg-color4 {
+	0% {
+		background-color: #A9A9A9;
+	}
+	29% {
+		background-color: #A9A9A9;
+	}
+	30% {
+		background-color: #FFFFFF;
+	}
+	39% {
+		background-color: #FFFFFF;
+	}
+	40% {
+		background-color: #A9A9A9;
+	}
+	100% {
+		background-color: #A9A9A9;
+	}
+}
+
+@keyframes bg-color5 {
+	0% {
+		background-color: #A9A9A9;
+	}
+	39% {
+		background-color: #A9A9A9;
+	}
+	40% {
+		background-color: #FFFFFF;
+	}
+	49% {
+		background-color: #FFFFFF;
+	}
+	50% {
+		background-color: #A9A9A9;
+	}
+	100% {
+		background-color: #A9A9A9;
+	}
+}
+
+@keyframes bg-color6 {
+	0% {
+		background-color: #A9A9A9;
+	}
+	49% {
+		background-color: #A9A9A9;
+	}
+	50% {
+		background-color: #FFFFFF;
+	}
+	59% {
+		background-color: #FFFFFF;
+	}
+	60% {
+		background-color: #A9A9A9;
+	}
+	100% {
+		background-color: #A9A9A9;
+	}
+}

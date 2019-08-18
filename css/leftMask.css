@@ -1,0 +1,45 @@
+#leftMask {
+	position: absolute;
+	/*height:112vw;*/
+	overflow: hidden;
+	
+	z-index: -1;
+	
+	/*opacity: 0.1;*/
+	/*border: 1px solid yellow;*/
+	
+}
+
+#trapezoidup {
+	height: 0;
+	width: 38vw;
+	border-top: 14vw solid black;
+	border-right: 14vw solid transparent;
+}
+
+#trapezoiddown {
+	height: 0;
+	width: 38vw;
+	margin-top:-0.2vw;
+	border-bottom: 14vw solid black;
+	border-right: 14vw solid transparent;
+}
+
+#rectangleup,
+#rectangledown {
+	height: 16vw;
+	background: black;
+	width: 38vw;
+}
+#rectangledown{
+	height: 21vw;
+}
+
+#rectanglemiddle {
+	width: 24vw;
+	height: 51vw;
+	margin-top: -1.5vw;
+	background: black;
+	
+	
+}

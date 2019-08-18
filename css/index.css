@@ -1,0 +1,415 @@
+.main {
+	height: 58vw;
+	background-color: black;
+	padding-top: 9.8vw;
+	color: #FFFFFF;
+	/*opacity: 0.1;*/
+	/*border: 1px solid yellow;*/
+}
+
+.main .ico {
+	height: 20vw;
+	width: 20vw;
+	margin-left: 4vw;
+	vertical-align: middle;
+	z-index: 10;
+}
+
+.main .titleName {
+	font-size: 4vw;
+	margin-left: 3vw;
+	word-spacing: 1vw;
+	letter-spacing: 0.1vw;
+	z-index: 10;
+}
+
+.main .titleVersion {
+	font-size: 7vw;
+	font-weight: bold;
+	margin-left: 1vw;
+	z-index: 10;
+}
+
+.center {
+	height: 300vw;
+	z-index: 1;
+}
+
+.centerDiv {
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	/*border: 1px solid;*/
+	border-color: red;
+	height: 300vw;
+	opacity: 1;
+}
+
+.lineRight {
+	height: 4vw;
+	width: 15vw;
+	float: right;
+}
+
+.lineLeft {
+	height: 4vw;
+	width: 15vw;
+	float: left;
+}
+
+.fullImg {
+	width: 100%;
+}
+
+.triangleShadeleft {
+	width: 0;
+	height: 0;
+	border-bottom: 21.5vw solid #FFFFFF;
+	/**需要与背景色一致**/
+	border-right: 21.5vw solid transparent;
+	padding-top: 30vw;
+}
+
+.triangleShadeRight {
+	width: 0;
+	height: 0;
+	border-bottom: 21.5vw solid #FFFFFF;
+	/**需要与背景色一致**/
+	border-left: 21.5vw solid transparent;
+	padding-top: 24.5vw;
+	float: right;
+}
+
+
+/*************图片Section1************/
+
+.section1 {
+	height: 72vw;
+	background: transparent;
+	padding-top: 15.5vw;
+	padding-left: 21vw;
+}
+
+.section1 .picbox {
+	width: 77vw;
+	margin-top: 0.5vw;
+	float: right;
+}
+
+.section1 .picBorder {
+	width: 77vw;
+	position: absolute;
+	z-index: -1;
+}
+
+
+/****************************************/
+
+
+/*************图片Section2************/
+
+.section2 {
+	height: 67vw;
+	padding-top: 16vw;
+	padding-right: 17vw;
+}
+
+.section2 .picbox2 {
+	width: 89vw;
+	height: 47vw;
+	margin-top: 1vw;
+	float: left;
+	/*border: 1px solid yellow;*/
+}
+
+.section2 .picBorder2 {
+	width: 89vw;
+	/*height:43;*/
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+	
+	/*border: 1px solid green;*/
+	
+	
+}
+
+.imgCut{
+  height: 46vw;
+  overflow:  hidden;
+  /*border: 1px solid yellow;*/
+}
+
+.imgCut .imgPosition{
+	margin-top:-13.5vw
+}
+
+/********************************/
+
+
+/*************图片Section3************/
+
+.section3 {
+	height: 76vw;
+	background: transparent;
+	padding-top: 21vw;
+	padding-left: 21vw;
+	/*border: 1px solid blue;*/
+}
+
+.section3 .picbox3 {
+	width: 77vw;
+	margin-top: 0.5vw;
+	float: right;
+	/*border: 1px solid red;*/
+}
+
+.section3 .picBorder3 {
+	width: 77vw;
+	position: absolute;
+	z-index: -1;
+	
+	/*border: 1px solid yellow;*/
+}
+
+.section3 .imgPosition3{
+	
+}
+
+/**************************************/
+
+
+/*************图片Section4************/
+
+.section4 {
+	height: 67vw;
+	padding-top: 16vw;
+	padding-right: 17vw;
+	/*border: 1px solid darkblue;*/
+}
+
+.section4 .picbox4 {
+	width: 89vw;
+	margin-top: 1vw;
+	float: left;
+	/*border: 1px solid darkgoldenrod;*/
+}
+
+.section4 .picBorder4 {
+	width: 89vw;
+	position: absolute;
+	z-index: -1;
+}
+
+
+/********************************/
+
+.textDiv {
+	height: 300vw;
+	position: absolute;
+	width: 100%;
+	z-index: 2000;
+	color: #FFFFFF;
+}
+
+
+/***********text section 1********************/
+
+.textsection1 {
+	height: 72vw;
+	padding-top: 15.8vw;
+	padding-left: 28vw;
+	/*border: 1px solid red;*/
+}
+
+.textsection1 .title1 {
+	font-size: 2.5vw;
+	float: left;
+	margin-top: 0.6vw;
+}
+
+.textsection1 .moudle1 {
+	font-size: 3vw;
+	font-family: impact;
+	color: #c0552b;
+	margin-right: 1vw;
+	float: right;
+}
+
+.textsection1 .content1 {
+	clear: both;
+	font-size: 1.5vw;
+	padding-top: 2vw;
+	padding-left: 3vw;
+	padding-right: 50vw;
+	line-height: 2.5vw;
+}
+
+
+/********************************/
+
+
+/***********text section 2********************/
+
+.textsection2 {
+	height: 67vw;
+	padding-top: 17vw;
+	padding-right: 10vw;
+	/*border: 1px solid red;*/
+}
+
+.textsection2 .title2 {
+	font-size: 2.5vw;
+	float: left;
+	padding-top: 0.5vw;
+}
+
+.textsection2 .moudle2 {
+	font-size: 3vw;
+	font-family: impact;
+	color: #c0552b;
+	margin-left: 1vw;
+	float: left;
+	width: 62vw;
+	/*border: 1px solid green;*/
+}
+
+.textsection2 .content2 {
+	clear: both;
+	font-size: 1.5vw;
+	padding-top: 2vw;
+	padding-left: 63vw;
+	padding-right: 3vw;
+	line-height: 2.5vw;
+}
+
+
+/********************************/
+
+
+/***********text section 3********************/
+
+.textsection3 {
+	height: 72vw;
+	padding-top: 21.5vw;
+	padding-left: 28vw;
+	/*border: 1px solid red;*/
+}
+
+.textsection3 .title3 {
+	font-size: 2.5vw;
+	float: left;
+	margin-top: 0.6vw;
+}
+
+.textsection3 .moudle3 {
+	font-size: 3vw;
+	font-family: impact;
+	color: #c0552b;
+	margin-right: 1vw;
+	float: right;
+}
+
+.textsection3 .content3 {
+	clear: both;
+	font-size: 1.5vw;
+	padding-top: 2vw;
+	padding-left: 3vw;
+	padding-right: 50vw;
+	line-height: 2.5vw;
+}
+
+
+/********************************/
+
+
+/***********text section 4********************/
+
+.textsection4 {
+	height: 67vw;
+	padding-top: 20vw;
+	padding-right: 10vw;
+	/*border: 1px solid red;*/
+}
+
+.textsection4 .title4 {
+	font-size: 2.5vw;
+	float: left;
+	padding-top: 0.5vw;
+}
+
+.textsection4 .moudle4 {
+	font-size: 3vw;
+	font-family: impact;
+	color: #c0552b;
+	margin-left: 1vw;
+	float: left;
+	width: 62vw;
+	/*border: 1px solid green;*/
+}
+
+.textsection4 .content4 {
+	clear: both;
+	font-size: 1.5vw;
+	padding-top: 2vw;
+	padding-left: 63vw;
+	padding-right: 3vw;
+	line-height: 2.5vw;
+}
+
+
+/********************************/
+
+
+/**************黑色遮罩******************/
+
+.shade {
+	height: 300vw;
+	position: absolute;
+	z-index: 1000;
+	overflow: hidden;
+	/*border: 1px solid yellow;*/
+}
+
+.shade img {
+	height: 310vw;
+	margin-top: -0.1vw;
+	opacity: 0.9;
+}
+
+
+/***********6斜线******************/
+
+#obliqueline-box1 {
+	z-index: 3000;
+	margin-top: 18vw;
+	float: right;
+	margin-right: 2vw;
+	text-align: right;
+	/*border: 1px solid green;*/
+}
+
+
+/********main 线条样式*********************/
+
+.mainbg-box {
+	position: absolute;
+	overflow: hidden;
+	height: 59vw;
+	/*58.5*/
+	margin-top: -9.7vw;
+	z-index: 1;
+	/*border: 1px solid green;*/
+}
+
+.mainbg-box img {
+	background-size: contain|cover;
+	width: 100%;
+	height: auto;
+	margin-left: -1.4vw;
+	opacity: 0.2;
+	/*border: 1px solid red;*/
+}
+
+
+/*******************************************/
