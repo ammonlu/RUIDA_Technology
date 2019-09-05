@@ -18,27 +18,44 @@
 	/* Opera */
 	/*border: 1px solid green;*/
 }
-
+.laddershaped{
+	opacity: 0;
+	-moz-transition:opacity 0.1s linear 0.4s;
+	-webkit-transition:opacity 0.1s linear 0.4s;
+	-o-transition:width opacity 0.1s linear 0.4s;
+	transition: opacity 0.1s linear 0.4s;
+}
 .left_laddershaped {
 	height: 0;
-	width: 9.5vw;
+	width: 0vw;/*9.5vw;*//*8.5vw,7.5vw*/
 	border-bottom: 0.5vw solid black;
 	border-left: 0.5vw solid transparent;
 	margin-top: 0.75vw;
 	opacity: 0.9;
+	
+	-moz-transition:width 0.3s linear 0.4s;
+	-webkit-transition:width 0.3s linear 0.4s;
+	-o-transition:width width 0.3s linear 0.4s;
+	transition: width 0.3s linear 0.4s;
 }
-
+.ladder1,.ladder2,.ladder3{
+	
+}
 .right_laddershaped {
 	height: 0;
-	width: 9.5vw;
+	width: 0vw;
 	border-bottom: 0.5vw solid black;
 	border-right: 0.5vw solid transparent;
 	margin-top: 0.75vw;
 	opacity: 0.9;
+	
+	-moz-transition:width 0.1s;
+	-webkit-transition:width 0.1s;
+	-o-transition:width width 0.1s;
+	transition: width 0.1s;
 }
 
 .cbg1 {
-
 	background-color: #A9A9A9;
 	-webkit-animation: bg-color1 5s infinite;
 	-moz-animation: bg-color1 5s infinite;
@@ -46,7 +63,6 @@
 }
 
 .cbg2 {
-
 	background-color: #A9A9A9;
 	-webkit-animation: bg-color2 5s infinite;
 	-moz-animation: bg-color2 5s infinite;
@@ -54,7 +70,6 @@
 }
 
 .cbg3 {
-
 	background-color: #A9A9A9;
 	-webkit-animation: bg-color3 5s infinite;
 	-moz-animation: bg-color3 5s infinite;
@@ -62,7 +77,6 @@
 }
 
 .cbg4 {
-
 	background-color: #A9A9A9;
 	-webkit-animation: bg-color4 5s infinite;
 	-moz-animation: bg-color4 5s infinite;
@@ -70,7 +84,6 @@
 }
 
 .cbg5 {
-
 	background-color: #A9A9A9;
 	-webkit-animation: bg-color5 5s infinite;
 	-moz-animation: bg-color5 5s infinite;
@@ -78,7 +91,6 @@
 }
 
 .cbg6 {
-
 	background-color: #A9A9A9;
 	-webkit-animation: bg-color6 5s infinite;
 	-moz-animation: bg-color6 5s infinite;
@@ -443,4 +455,90 @@
 	100% {
 		background-color: #A9A9A9;
 	}
+}
+
+.shapebox {
+	padding-left: 27.2vw;
+	position: absolute;
+	width:100%;
+	z-index: 1000;
+}
+.shapeboxwidth{
+	width: 32.5vw;
+}
+.shadecommon {
+	width: 0.1vw; /*32vw;*/
+	background: rgba(0, 0, 0, 0.9);
+	
+	-moz-transition:width 0.3s linear 0.1s;  /*Firefox 4 */
+	-webkit-transition:width 0.3s linear 0.1s;  /*Safari and Chrome */
+	-o-transition:width 0.3s linear 0.1s; /* Opera */
+	transition:width 0.3s linear 0.1s;
+}
+
+.pxsbx1 {
+	height: 20vw;
+	/*background: #EC0465;*/
+	transform: skew(-45deg);
+	-webkit-transform: skew(-45deg);
+	-moz-transform: skew(-45deg);
+}
+
+.pxsbx2 {
+	height: 44vw;
+	/*background: #EC0465;*/
+	transform: skew(45deg);
+	-webkit-transform: skew(45deg);
+	-moz-transform: skew(45deg);
+	margin-left: 12vw;
+}
+
+.pxsbx3 {
+	height: 43vw;
+	/*background: #EC0465;*/
+	transform: skew(-45deg);
+	-webkit-transform: skew(-45deg);
+	-moz-transform: skew(-45deg);
+	margin-left: 12.5vw;
+}
+
+.pxsbx4 {
+	height: 43vw;
+	/*background: #EC0465;*/
+	transform: skew(45deg);
+	-webkit-transform: skew(45deg);
+	-moz-transform: skew(45deg);
+	margin-left: 12.5vw;
+}
+
+.pxsbx5 {
+	height: 43vw;
+	/*background: #EC0465;*/
+	transform: skew(-45deg);
+	-webkit-transform: skew(-45deg);
+	-moz-transform: skew(-45deg);
+	margin-left: 12.5vw;
+}
+
+.jx1 {
+	margin-left: -10vw;
+	height: 30.5vw;
+}
+
+.jx2 {
+	margin-left: 34vw;
+	height: 29.5vw;
+	/*margin-top: -0.1px;*/
+}
+
+.jx3 {
+	margin-left: -9vw;
+	height: 29vw;
+	/*margin-top: -0.1px;*/
+}
+
+.jx4 {
+	margin-left: 34vw;
+	height: 32.6vw;
+	margin-top: -0.1px;
 }
