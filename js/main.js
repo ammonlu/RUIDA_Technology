@@ -86,6 +86,7 @@ jQuery(document).ready(function($) {
 					var nextHeight = $nextPage.children('div:first-child').data('height');
 					mainContent.data('height', nextHeight);
 
+  resetMainContentSize(nextHeight);
 					$currPage.addClass(outClass).on(animEndEventName, function() {
 						$currPage.off(animEndEventName);
 						
@@ -104,7 +105,7 @@ jQuery(document).ready(function($) {
 						$nextPage.off(animEndEventName);
 						endNextPage = true;
 						
-						console.log('2');
+						//console.log('2');
 						
 						if(!endCurrPage){
 							$nextPage.prev('.cd-section').remove();
@@ -139,6 +140,7 @@ jQuery(document).ready(function($) {
 		
 		if(newSectionName == 'index') {
 			$('.counter').countUp();
+			startShadeAnimation();
 		}
 	}
 
@@ -146,8 +148,6 @@ jQuery(document).ready(function($) {
     	if(newHeight == '358vw') {
 			mainContent.removeClass('height112');
 			mainContent.addClass('height358');
-			
-			startShadeAnimation();
 			
 		} else {
 			mainContent.removeClass('height358');
