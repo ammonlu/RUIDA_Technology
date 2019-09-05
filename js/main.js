@@ -17,7 +17,7 @@ jQuery(document).ready(function($) {
 	var loadingBar = $('#loadingBar');
 	var newWidthValue = 1;
 	var widthMax = 100;
-
+    
 	var firstLoad = false;
 	var isAnimating = false;
 	var outClass, inClass;
@@ -146,6 +146,9 @@ jQuery(document).ready(function($) {
     	if(newHeight == '358vw') {
 			mainContent.removeClass('height112');
 			mainContent.addClass('height358');
+			
+			startShadeAnimation();
+			
 		} else {
 			mainContent.removeClass('height358');
 			mainContent.addClass('height112');
@@ -159,7 +162,7 @@ jQuery(document).ready(function($) {
 			width: '1vw'
 		}).removeClass('hidden');
 	}
-
+    
 	function loadingBarAnimation() {
 		if(newWidthValue + 5 < widthMax/2) {
 			newWidthValue = newWidthValue + 1;
@@ -171,7 +174,10 @@ jQuery(document).ready(function($) {
 			width: newWidthValue + 'vw'
 		}, 100, loadingBarAnimation);
 	}
-
+    //触发main shade 动画
+    function startShadeAnimation(){
+		animationUtil.startMainAnimation();
+	}
 	function resetLoadingBar() {
 		loadingBar.addClass('hidden');
 	}
@@ -179,7 +185,7 @@ jQuery(document).ready(function($) {
 	var animationArrayList = [32, 44, 46, 62, 63, 67];
 
 	function setRandomAnimation() {
-		var animation = animationArrayList[Math.round(Math.random() * (animationArrayList.length - 1))];
+		var animation = 2;//animationArrayList[Math.round(Math.random() * (animationArrayList.length - 1))];
 		//	    var animation = Math.floor(Math.random() * 67) + 1;
 		//	    console.log('animation no. '+animation);
 
