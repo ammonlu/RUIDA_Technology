@@ -16,6 +16,8 @@ body {
 .content-main{
 	/*border: 1px solid red;*/	
 	overflow: hidden;
+	z-index: -1;
+	/*display: none;*/
 }
 
 .cd-section{

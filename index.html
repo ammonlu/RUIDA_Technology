@@ -5,20 +5,6 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>RUIDA TECHNOLOGY INDEX</title>
-		<style>
-			#test {
-				position: absolute;
-				margin: 0;
-				z-index: -1;
-			}
-			
-			#test img {
-				background-size: contain|cover;
-				width: 100%;
-				height: auto;
-				opacity: 0.2;
-			}
-		</style>
 		<link href="css/main.css" rel="stylesheet" />
 		<link href="css/leftMask.css" rel="stylesheet" />
 		<link href="css/header.css" rel="stylesheet" />
@@ -46,39 +32,42 @@
 		<div class="top">
 			<div class="header" id='headerdiv'>
 				<img src="img/logo/logo白.png" class="logo" />
-				<span class="title">RUIDA TECHNOLOGY</span>
+				<span class="title" data-locale='companyName'>RUIDA TECHNOLOGY</span>
 			</div>
 			<div class="navigation" id='navdiv'>
 				<div class="navigation-item-box">
 					<ul>
 						<li class="navigation-item ib">
-							<a href="#" class="navigation-link" data-menu='index'>
+							<a href="#" class="navigation-link" data-menu='index' data-locale='nav_main'>
 								Main
 							</a>
 						</li>
 						<li class="navigation-item ib">
-							<a href="#" class="navigation-link" data-menu='BlowMolding'>
+							<a href="#" class="navigation-link" data-menu='BlowMolding' data-locale='nav_blowmolding'>
 								Blow Molding
 							</a>
 						</li>
 						<li class="navigation-item ib">
-							<a href="#" class="navigation-link" data-menu='automatic'>
+							<a href="#" class="navigation-link" data-menu='automatic' data-locale='nav_automatic'>
 								Automatic
 							</a>
 						</li>
 						<li class="navigation-item ib">
-							<a href="#" class="navigation-link" data-menu='line'>
+							<a href="#" class="navigation-link" data-menu='line' data-locale='nav_line'>
 								Line
 							</a>
 						</li>
 						<li class="navigation-item ib">
-							<a href="#" class="navigation-link" data-menu='mould'>
+							<a href="#" class="navigation-link" data-menu='mould' data-locale='nav_mould'>
 								Mould
 							</a>
 						</li>
-						<li class="navigation-item ib">
-							<a href="#" class="navigation-link" data-menu='language'>
+						<li class="navigation-item2 link-list">
+							<a href="#" class="navigation-link" data-menu='language' data-lan='en' data-locale='nav_language_en'>
 								Language EN
+							</a>
+							<a href="#" class="navigation-link2" data-menu='language' data-lan='zh' data-locale='nav_language_zh'>
+								Language ZH
 							</a>
 						</li>
 					</ul>
@@ -96,7 +85,7 @@
 						</div>
 						<div style="position: absolute; z-index: 2;">
 							<img src="img/gearwheel.png" class="ico wheelanimation">
-							<span class="titleName">BUILD INDUSTRY</span>
+							<span class="titleName" data-locale='main_buildIndustry'>BUILD INDUSTRY</span>
 							<span class="titleVersion counter" data-counter-time='500'>4.0</span>
 						</div>
 						
@@ -209,30 +198,22 @@
 							<!---text section 1-->
 							<div class="textsection1">
 								<div style="width: 100%;">
-									<span class="title1 titlemoveL">Example Text</span>
-									<span class="moudle1 textModuleMoveR">BLOW MOLDING</span>
+									<span class="title1 titlemoveL" data-locale='main_blowmolding_title'>Example Text</span>
+									<span class="moudle1 textModuleMoveR" data-locale='main_blowmolding'>BLOW MOLDING</span>
 								</div>
 								<div class="content1 textContentMoveL">
-									<span>Example Text</span>
-									<br>
-									<span>Example Text</span>
-									<br>
-									<span>Example Text</span>
+									<span data-locale='main_blowmolding_introduction'>Example Text</span>
 								</div>
 							</div>
 
 							<!---text section 2-->
 							<div class="textsection2">
 								<div style="width: 100%;">
-									<div class="moudle2 textModuleMoveL">AUTOMATIC</div>
+									<div class="moudle2 textModuleMoveL" data-locale='main_automatic'>AUTOMATIC</div>
 									<div class="descriptionBox">
-										<div class="title2 titlemoveL">Example Text</div>
+										<div class="title2 titlemoveL" data-locale='main_automatic_title' >Example Text</div>
 										<div class="content2 textContentMoveL">
-											<span>Example Text</span>
-											<br>
-											<span>Example Text</span>
-											<br>
-											<span>Example Text</span>
+											<span data-locale='main_automatic_introduction'>Example Text</span>
 										</div>
 									</div>
 								</div>
@@ -241,29 +222,21 @@
 							<!---text section 3-->
 							<div class="textsection3">
 								<div style="width: 100%;">
-									<span class="title3 titlemoveL">Example Text</span>
-									<span class="moudle3 textModuleMoveR">LINE</span>
+									<span class="moudle3 textModuleMoveR" data-locale='main_line'>LINE</span>
+									<span class="title3 titlemoveL" data-locale='main_line_title'>Example Text</span>
 								</div>
 								<div class="content3 textContentMoveL">
-									<span>Example Text</span>
-									<br>
-									<span>Example Text</span>
-									<br>
-									<span>Example Text</span>
+									<span data-locale='main_line_introduction'>Example Text</span>
 								</div>
 							</div>
 
 							<!---text section 4-->
 							<div class="textsection4">
-								<div class="moudle4 textModuleMoveL">MOULD</div>
+								<div class="moudle4 textModuleMoveL" data-locale='main_mould'>MOULD</div>
 									<div class="descriptionBox">
-										<div class="title4 titlemoveL">Example Text</div>
+										<div class="title4 titlemoveL" data-locale='main_mould_title'>Example Text</div>
 										<div class="content4 textContentMoveL">
-											<span>Example Text</span>
-											<br>
-											<span>Example Text</span>
-											<br>
-											<span>Example Text</span>
+											<span data-locale='main_mould_introduction'>Example Text</span>
 										</div>
 									</div>
 							</div>
@@ -288,9 +261,12 @@
 			</div>
 		</div>
 	</body>
-	
+	<script type="text/javascript" src="js/subpage.js" ></script>
+	<script type="text/javascript" src="js/jquery.i18n.properties-min.js" ></script>
+	<script type="text/javascript" src="js/i18nLanguage.js" ></script>
 	<script src="js/main.js"></script>
 	<script>
+		i18nUtil.initializeI18N();
 		animationUtil.startMainAnimation();
 	</script>
 

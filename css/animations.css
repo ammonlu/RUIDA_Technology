@@ -20,6 +20,11 @@
 	-moz-animation: moveToRight .6s ease both;
 	animation: moveToRight .6s ease both;
 }
+.pt-page-moveToRight02 {
+	-webkit-animation: moveToRight .2s ease both;
+	-moz-animation: moveToRight .2s ease both;
+	animation: moveToRight .2s ease both;
+}
 
 .pt-page-moveFromRight {
 	-webkit-animation: moveFromRight .6s ease both;

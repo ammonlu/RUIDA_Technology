@@ -1,4 +1,15 @@
 var animationUtil={
+	getAnimEndEventName:function() {
+		var animEndEventNames = {
+			'WebkitAnimation': 'webkitAnimationEnd',
+			'OAnimation': 'oAnimationEnd',
+			'msAnimation': 'MSAnimationEnd',
+			'animation': 'animationend'
+		};
+		// animation end event name
+		var animEndEventName = animEndEventNames[Modernizr.prefixed('animation')];
+		return animEndEventName;
+	},
 	startMainAnimation:function(){
 		
 		var shadedone = false;
@@ -51,4 +62,38 @@ var animationUtil={
 			$this.css('padding-left', '0vw');
 		},true);
 	},
+	_startHideAnimation:function($div, animEndEventName, anClass){
+		$div.addClass(anClass).on(animEndEventName, function(){
+			$div.off(animEndEventName);
+		});
+	},
+	_startShowAnimation:function($div, animEndEventName, anClass){
+		$div.addClass(anClass).on(animEndEventName, function(){
+			$div.off(animEndEventName);
+			$div.removeClass(anClass);
+		});
+	},
+	startSubHideAnimation:function($section){
+		var moveToRight = 'pt-page-moveToRight';
+		var moveToLeft = 'pt-page-moveToLeft';
+		var animEndEventName = animationUtil.getAnimEndEventName();
+		animationUtil._startHideAnimation($section.find('.type-bar').first(),animEndEventName, moveToLeft);
+		animationUtil._startHideAnimation($section.find('.instructionTitle').first(),animEndEventName, moveToRight);
+		animationUtil._startHideAnimation($section.find('.instruction').first(),animEndEventName, moveToRight);
+		animationUtil._startHideAnimation($section.find('.instruction-imgDiv').first(),animEndEventName, moveToLeft);
+		animationUtil._startHideAnimation($section.find('.dataSubjectdiv').first(),animEndEventName, moveToRight);
+		animationUtil._startHideAnimation($section.find('.dataDetailDiv').first(),animEndEventName, moveToLeft);
+	}, 
+	showSubPageAnimation:function($section){
+		var moveFromRight = 'pt-page-moveFromRight';
+		var moveFromLeft = 'pt-page-moveFromLeft';
+		var animEndEventName = animationUtil.getAnimEndEventName();
+		animationUtil._startShowAnimation($section.find('.type-bar').first(),animEndEventName, moveFromLeft);
+		animationUtil._startShowAnimation($section.find('.instructionTitle').first(),animEndEventName, moveFromRight);
+		animationUtil._startShowAnimation($section.find('.instruction').first(),animEndEventName, moveFromRight);
+		animationUtil._startShowAnimation($section.find('.instruction-imgDiv').first(),animEndEventName, moveFromLeft);
+		animationUtil._startShowAnimation($section.find('.dataSubjectdiv').first(),animEndEventName, moveFromRight);
+		animationUtil._startShowAnimation($section.find('.dataDetailDiv').first(),animEndEventName, moveFromLeft);
+	}
 };
+ 

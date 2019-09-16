@@ -17,7 +17,7 @@ jQuery(document).ready(function($) {
 	var loadingBar = $('#loadingBar');
 	var newWidthValue = 1;
 	var widthMax = 100;
-    
+
 	var firstLoad = false;
 	var isAnimating = false;
 	var outClass, inClass;
@@ -48,12 +48,30 @@ jQuery(document).ready(function($) {
 		if(sectionTarget != 'language') {
 			$('title').text('RUIDA TECHNOLOGY ' + sectionTarget.toUpperCase());
 			if(!isAnimating) {
+
+				if(subpageutil != undefined) {
+					subpageutil.clearTimer();
+				}
 				//if user has selected a section different from the one alredy visible - load the new content
 				triggerAnimation(sectionTarget, true);
 			} else {
 				//				console.log('is animating');
 			}
+		} else if(!isAnimating) {
+		   var lan = target.data('lan');
+			
+			i18nUtil.changeLanguage(lan);
 		}
+	});
+	//语言导航
+	$('.link-list').hover(function() {
+		$(this).children('.navigation-link2').each(function() {
+			$(this).css('display', 'block');
+		});
+	}, function() {
+		$(this).children('.navigation-link2').each(function() {
+			$(this).css('display', 'none');
+		});
 	});
 
 	function triggerAnimation(newSection, bool) {
@@ -69,7 +87,7 @@ jQuery(document).ready(function($) {
 
 		loadingBarAnimation();
 		setRandomAnimation();
-		
+
 		var sectionHeight = mainContent.data('height');
 
 		var $currPage = mainContent.children().first();
@@ -82,21 +100,21 @@ jQuery(document).ready(function($) {
 				loadingBar.velocity('stop').velocity({
 					width: widthMax + 'vw',
 				}, 400, function() {
-
+					i18nUtil.initializeI18N($nextPage);
 					var nextHeight = $nextPage.children('div:first-child').data('height');
 					mainContent.data('height', nextHeight);
 
-  resetMainContentSize(nextHeight);
+					resetMainContentSize(nextHeight);
 					$currPage.addClass(outClass).on(animEndEventName, function() {
 						$currPage.off(animEndEventName);
-						
+
 						console.log('1');
-						
+
 						endCurrPage = true;
-                         
+
 						if(endNextPage) {
 							onEndAnimation(newSection, $nextPage, nextHeight);
-						}else{
+						} else {
 							$nextPage.prev('.cd-section').remove();
 						}
 					});
@@ -104,13 +122,13 @@ jQuery(document).ready(function($) {
 					$nextPage.removeClass('hidden').addClass(inClass).on(animEndEventName, function() {
 						$nextPage.off(animEndEventName);
 						endNextPage = true;
-						
+
 						//console.log('2');
-						
-						if(!endCurrPage){
+
+						if(!endCurrPage) {
 							$nextPage.prev('.cd-section').remove();
 						}
-						
+
 						onEndAnimation(newSection, $nextPage, nextHeight);
 					});
 
@@ -129,32 +147,35 @@ jQuery(document).ready(function($) {
 
 		}, 10);
 	}
-	
-	function onEndAnimation(newSectionName, $inpage, newHeight){
+
+	function onEndAnimation(newSectionName, $inpage, newHeight) {
 		isAnimating = false;
 		endCurrPage = false;
 		endNextPage = false;
-		
+
 		resetLoadingBar();
 		resetMainContentSize(newHeight);
-		
+
 		if(newSectionName == 'index') {
 			$('.counter').countUp();
 			startShadeAnimation();
+		} else {
+			if(subpageutil != undefined) {
+				subpageutil.initialize();
+			}
 		}
 	}
 
-    function resetMainContentSize(newHeight){
-    	if(newHeight == '358vw') {
+	function resetMainContentSize(newHeight) {
+		if(newHeight == '358vw') {
 			mainContent.removeClass('height112');
 			mainContent.addClass('height358');
-			
+
 		} else {
 			mainContent.removeClass('height358');
 			mainContent.addClass('height112');
 		}
-    }
-    
+	}
 
 	function initializeLoadingBar() {
 		newWidthValue = 1;
@@ -162,9 +183,9 @@ jQuery(document).ready(function($) {
 			width: '1vw'
 		}).removeClass('hidden');
 	}
-    
+
 	function loadingBarAnimation() {
-		if(newWidthValue + 5 < widthMax/2) {
+		if(newWidthValue + 5 < widthMax / 2) {
 			newWidthValue = newWidthValue + 1;
 		} else if(newWidthValue + 0.2 < widthMax) {
 			newWidthValue = newWidthValue + 0.2;
@@ -174,10 +195,11 @@ jQuery(document).ready(function($) {
 			width: newWidthValue + 'vw'
 		}, 100, loadingBarAnimation);
 	}
-    //触发main shade 动画
-    function startShadeAnimation(){
+	//触发main shade 动画
+	function startShadeAnimation() {
 		animationUtil.startMainAnimation();
 	}
+
 	function resetLoadingBar() {
 		loadingBar.addClass('hidden');
 	}
@@ -185,7 +207,7 @@ jQuery(document).ready(function($) {
 	var animationArrayList = [32, 44, 46, 62, 63, 67];
 
 	function setRandomAnimation() {
-		var animation = 2;//animationArrayList[Math.round(Math.random() * (animationArrayList.length - 1))];
+		var animation = 2; //animationArrayList[Math.round(Math.random() * (animationArrayList.length - 1))];
 		//	    var animation = Math.floor(Math.random() * 67) + 1;
 		//	    console.log('animation no. '+animation);
 
