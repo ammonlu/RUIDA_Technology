@@ -1,5 +1,45 @@
-/*6斜杠*/
+/*subpage Left Mash*/
+#leftMask {
+	position: absolute;
+	overflow: hidden;
+	z-index: 1;
+}
 
+#trapezoidup {
+	height: 0;
+	width: 38vw;
+	border-top: 14vw solid black;
+	border-right: 14vw solid transparent;
+}
+/*subpage Left Mash*/
+#trapezoiddown {
+	height: 0;
+	width: 38vw;
+	margin-top:-0.2vw;
+	border-bottom: 14vw solid black;
+	border-right: 14vw solid transparent;
+}
+
+#rectangleup,
+#rectangledown {
+	height: 16vw;
+	background: black;
+	width: 38vw;
+}
+#rectangledown{
+	height: 21vw;
+}
+
+#rectanglemiddle {
+	width: 24vw;
+	height: 51vw;
+	margin-top: -1.5vw;
+	background: black;
+	
+	
+}
+/*subpage Left Mash end*/
+/*6斜杠*/
 .obliqueline {
 	border-radius: 10vw;
 	background-color: #A9A9A9;

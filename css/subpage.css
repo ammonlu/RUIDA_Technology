@@ -26,14 +26,13 @@
 
 .content-title .value {
 	color: #FFFFFF;
-	font-size: 2.5vw;
 	margin-left: 2vw;
 	padding-top: 3vw;
 	float: left;
 }
 
 .type-bar {
-	font-size: 16px;
+	/*font-size: 16px;*/
 	display: block;
 	color: #B3B3B3;
 	height: 0;
@@ -50,7 +49,7 @@
 
 .type-bar span {
 	color: #FFFFFF;
-	font-size: 2.5vw;
+	/*font-size: 2.5vw;*/
 	margin-left: 2vw;
 }
 
@@ -84,6 +83,7 @@
 	padding-right: 2vw;
 	padding-top: 0.5vw;
 	/*border: 1px solid red;*/
+	display: none;
 }
 
 .instruction {
@@ -92,18 +92,20 @@
 	height: 12vw;
 	padding-top: 1.5vw;
 	padding-right: 1vw;
+	
 	/*border: 1px solid green;*/
 }
 
 .instruction-content {
 	float: right;
-	width: 50vw;
+	width: 58vw;
 	/*padding-left: 22vw;*/
 	padding-top: 0.5vw;
 	height: 12vw;
-	line-height: 2.1vw;
+	/*line-height: 2.1vw;*/
 	word-break: break-word;
-	font-size: 1.5vw;
+	/*font-size: 1.5vw;*/
+	
 	/*border:  1px solid palevioletred;*/
 }
 
@@ -120,7 +122,7 @@
 .submenu ul {
 	list-style-type: none;
 	line-height: 3.5vw;
-	font-size: 1.8vw;
+	/*font-size: 1.8vw;*/
 	color: #FFFFFF;
 	padding-left: 0vw;
 	padding-top: 1.8vw;
@@ -134,14 +136,14 @@
 	background: #C0552B;
 	display: block;
 	height: 3.7vw;
-	width: 17.5vw;
+	width: 19vw;
 	margin-bottom: 1.5vw;
 	cursor: pointer;
 	/*border: 1px solid greenyellow;*/
 }
 
 .submenu ul li:hover {
-	width: 19vw;
+	width: 21vw;
 	cursor: hand;
 	/*background-color: rgb(204,252,98);*/
 	background-color: rgb(255, 0, 0);
@@ -206,6 +208,7 @@
 	height: 29vw;
 	/*margin-top: 1vw;*/
 	/*border: 1px solid palevioletred;*/
+	display: none;
 }
 
 .data .dataSubjectdiv {
