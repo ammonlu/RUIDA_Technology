@@ -767,7 +767,7 @@ h6 {
 	.navigation-item,
 	.navigation-item2 {
 		font-size: 1.4vw;
-		/*min-width: 5vw;*/
+		min-width: 2vw;
 		margin: 0px;
 	}
 	.navigation-link {
