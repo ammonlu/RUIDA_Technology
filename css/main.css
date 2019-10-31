@@ -154,6 +154,13 @@ body {
 	display: none;
 }
 
+.nav-lan-en,
+.nav-lan-zh,
+.nav-lan-ru {
+	min-width: 13vw;
+}
+
+.nav-lan-en,
 .font-nav-en {
 	color: #000000;
 	font-size: 1.4vw;
@@ -213,6 +220,7 @@ body {
 	line-height: 2.1vw;
 }
 
+.nav-lan-zh,
 .font-nav-zh {
 	color: #000000;
 	/*color: green;*/
@@ -277,6 +285,7 @@ body {
 	line-height: 2.5vw;
 }
 
+.nav-lan-ru,
 .font-nav-ru {
 	color: #000000;
 	/*color: green;*/
@@ -791,12 +800,17 @@ h6 {
 		background-color: rgba(192, 84, 43, 0.8);
 		border-bottom: 1px solid #C0542B;
 	}
-	.font-nav-zh,
-	.font-nav-en{
-		font-size: 1.3vw;
-	}
-	.font-nav-ru{
+	.nav-lan-zh,
+	.font-nav-zh {
 		font-size: 1vw;
+	}
+	.nav-lan-en,
+	.font-nav-en {
+		font-size: 1vw;
+	}
+	.nav-lan-ru,
+	.font-nav-ru {
+		font-size: 0.8vw;
 	}
 	.font-mian-module-zh,
 	.font-mian-module-ru,
@@ -814,19 +828,18 @@ h6 {
 	.font-main-description-en {
 		font-size: 1vw;
 	}
-	.font-sub-nav-ru{
-		font-size: 0.5vw;
+	.font-sub-nav-ru {
+		font-size: 0.8vw;
 		line-height: 1vw;
-		word-spacing: 0.1px;
+		padding-top: 0.3vw;
 	}
 	.font-sub-nav-en {
 		margin-top: 0.5vw;
-		
 	}
 	.font-sub-nav-zh {
-		font-size: 0.5vw;
-		margin-top: 0.5vw;
-		word-spacing: 0.1px;
+		font-size: 0.8vw;
+		margin-top: 0.4vw;
+		/*word-spacing: 0.1px;*/
 	}
 	.instruction-imgDiv {
 		/*height: 80vw;*/
