@@ -767,7 +767,7 @@ h6 {
 	.navigation-item,
 	.navigation-item2 {
 		font-size: 1.4vw;
-		min-width: 5vw;
+		/*min-width: 5vw;*/
 		margin: 0px;
 	}
 	.navigation-link {
@@ -808,13 +808,22 @@ h6 {
 		font-size: 1vw;
 	}
 	.font-sub-nav-ru,
-	.font-sub-nav-zh,
-	.font-sub-nav-en {
-		font-size: 1vw;
+	.font-sub-nav-zh {
+		font-size: 0.8vw;
 		line-height: 1.25vw;
 	}
-	.font-sub-nav-zh{
+	.font-sub-nav-en {
+		margin-top: 0.5vw;
+	}
+	.font-sub-nav-zh {
 		margin-top: 1vw;
+	}
+	.instruction-imgDiv {
+		/*height: 80vw;*/
+		width: 76vw;
+		float: right;
+		padding-top: 5vw;
+		/*border: 1px solid blue;*/
 	}
 }
 
