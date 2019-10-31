@@ -25,6 +25,7 @@ var i18nUtil = (function() {
 			name: 'language', //属性文件名     命名格式： 文件名_国家代号.properties             
 			path: 'i18n/', //注意这里路径是你属性文件的所在文件夹          
 			mode: 'map',
+			cache:'true',
 			language: 'en', //这就是国家代号 name+language刚好组成属性文件名：strings+zh -> strings_zh.properties
 			callback: function() {
 				if($dashboard != undefined && $dashboard != null) {
@@ -47,6 +48,7 @@ var i18nUtil = (function() {
 			name: 'language', //属性文件名     命名格式： 文件名_国家代号.properties             
 			path: 'i18n/', //注意这里路径是你属性文件的所在文件夹          
 			mode: 'map',
+			cache:'true',
 			language: 'zh', //这就是国家代号 name+language刚好组成属性文件名：strings+zh -> strings_zh.properties
 			callback: function() {
 				if($dashboard != undefined && $dashboard != null) {
@@ -69,6 +71,7 @@ var i18nUtil = (function() {
 			name: 'language', //属性文件名     命名格式： 文件名_国家代号.properties             
 			path: 'i18n/', //注意这里路径是你属性文件的所在文件夹          
 			mode: 'map',
+			cache:'true',
 			language: 'ru', //这就是国家代号 name+language刚好组成属性文件名：strings+zh -> strings_zh.properties
 			callback: function() {
 				if($dashboard != undefined && $dashboard != null) {
