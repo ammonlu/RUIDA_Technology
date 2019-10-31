@@ -791,6 +791,13 @@ h6 {
 		background-color: rgba(192, 84, 43, 0.8);
 		border-bottom: 1px solid #C0542B;
 	}
+	.font-nav-zh,
+	.font-nav-en{
+		font-size: 1.3vw;
+	}
+	.font-nav-ru{
+		font-size: 1vw;
+	}
 	.font-mian-module-zh,
 	.font-mian-module-ru,
 	.font-mian-module-en {
@@ -807,16 +814,19 @@ h6 {
 	.font-main-description-en {
 		font-size: 1vw;
 	}
-	.font-sub-nav-ru,
-	.font-sub-nav-zh {
-		font-size: 0.8vw;
-		line-height: 1.25vw;
+	.font-sub-nav-ru{
+		font-size: 0.5vw;
+		line-height: 1vw;
+		word-spacing: 0.1px;
 	}
 	.font-sub-nav-en {
 		margin-top: 0.5vw;
+		
 	}
 	.font-sub-nav-zh {
-		margin-top: 1vw;
+		font-size: 0.5vw;
+		margin-top: 0.5vw;
+		word-spacing: 0.1px;
 	}
 	.instruction-imgDiv {
 		/*height: 80vw;*/
