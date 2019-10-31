@@ -779,6 +779,10 @@ h6 {
 		min-width: 2vw;
 		margin: 0px;
 	}
+	.navigation-item,
+	.navigation-item2{
+	 min-width: 2vw;
+	}
 	.navigation-link {
 		display: block;
 		position: relative;
