@@ -3,41 +3,41 @@
 }
 
 html {
-	font-family: "Arial","微软雅黑";
+	font-family: "Arial", "微软雅黑";
 	/*color:white;*/
 }
 
 body {
 	margin: 0;
 	padding: 0;
-    background-color: #FFFFFF;
+	background-color: #FFFFFF;
 }
 
-
-.content-main{
-	/*border: 1px solid red;*/	
+.content-main {
+	/*border: 1px solid red;*/
 	overflow: hidden;
 	z-index: -1;
 	/*display: none;*/
 }
 
-.cd-section{
+.cd-section {
 	width: 100%;
-	position: absolute;	
+	position: absolute;
 	/*border: 1px solid yellow;*/
 }
 
-.overflow-hidden{
-	overflow:hidden;
+.overflow-hidden {
+	overflow: hidden;
 }
 
-.wheelanimation{
+.wheelanimation {
 	-webkit-animation: rotate 5s linear infinite;
 	-o-animation: rotate 5s linear infinite;
 	-ms-animation: rotate 5s linear infinite;
 	-moz-animation: rotate 5s linear infinite;
 	animation: rotate 5s linear infinite;
 }
+
 @-webkit-keyframes rotate {
 	0% {
 		-webkit-transform: rotate(0deg);
@@ -55,6 +55,7 @@ body {
 		-webkit-transform: rotate(360deg);
 	}
 }
+
 @-ms-keyframes rotate {
 	0% {
 		-o-transform: rotate(0deg);
@@ -72,6 +73,7 @@ body {
 		-o-transform: rotate(360deg);
 	}
 }
+
 @-moz-keyframes rotate {
 	0% {
 		-moz-transform: rotate(0deg);
@@ -108,8 +110,6 @@ body {
 	}
 }
 
-
-
 @keyframes rotate {
 	0% {
 		transform: rotate(0deg);
@@ -128,20 +128,24 @@ body {
 	}
 }
 
-.contentmove{
-	transition:height 0.5s;
-	-moz-transition:height 0.5s;  /*Firefox 4 */
-	-webkit-transition:height 0.5s;  /*Safari and Chrome */
-	-o-transition:height 0.5s; /* Opera */
+.contentmove {
+	transition: height 0.5s;
+	-moz-transition: height 0.5s;
+	/*Firefox 4 */
+	-webkit-transition: height 0.5s;
+	/*Safari and Chrome */
+	-o-transition: height 0.5s;
+	/* Opera */
 }
 
-.height358{
+.height358 {
 	height: 358vw;
 }
 
-.height112{
+.height112 {
 	height: 112vw;
 }
+
 .visible {
 	display: '';
 }
@@ -149,196 +153,222 @@ body {
 .hidden {
 	display: none;
 }
-.font-nav-en{
+
+.font-nav-en {
 	color: #000000;
 	font-size: 1.4vw;
-	font-family:'arial'
+	font-family: 'arial'
 }
-.font-industry-en{
+
+.font-industry-en {
 	font-size: 4vw;
 	font-weight: bold;
-	font-family:'arial';
-	
+	font-family: 'arial';
 }
-.font-industrydes-en{
+
+.font-industrydes-en {
 	font-size: 1.5vw;
-	font-family:'arial';
+	font-family: 'arial';
 	line-height: 2.5vw;
 	margin-right: 6vw;
 	color: whitesmoke;
 }
-.font-mian-module-en{
-	font-family:'impact';
+
+.font-mian-module-en {
+	font-family: 'impact';
 	font-weight: bold;
 	font-size: 3vw;
 }
-.font-mainT-en{
+
+.font-mainT-en {
 	font-family: 'arial';
 	font-size: 2.4vw;
 }
-.font-main-description-en{
-	font-family:'arial';
+
+.font-main-description-en {
+	font-family: 'arial';
 	font-size: 1.25vw;
 	line-height: 2.5vw
 }
-.font-submodule-en{
+
+.font-submodule-en {
 	font-family: 'arial';
 	font-size: 2.5vw;
 }
-.font-sub-nav-en{
+
+.font-sub-nav-en {
 	font-family: 'arial';
 	font-size: 1.5vw;
 }
-.font-sub-type-en{
+
+.font-sub-type-en {
 	font-family: 'arial';
 	font-size: 2.5vw;
-	
 }
-.font-sub-typedes-en{
+
+.font-sub-typedes-en {
 	font-size: 1.5vw;
-	font-family:'arial';
+	font-family: 'arial';
 	margin-left: 2vw;
-	
 	line-height: 2.1vw;
-	
 }
-.font-nav-zh{
+
+.font-nav-zh {
 	color: #000000;
 	/*color: green;*/
 	font-size: 1.5vw;
 	/*font-weight: bold;*/
-	font-family:"幼圆","微软雅黑","宋体";
-
+	font-family: "幼圆", "微软雅黑", "宋体";
 }
-.font-industry-zh{
+
+.font-industry-zh {
 	font-size: 5.5vw;
 	font-weight: bold;
-	font-family:"幼圆","微软雅黑","宋体";
-	
+	font-family: "幼圆", "微软雅黑", "宋体";
 	margin-left: 2vw;
 }
-.font-industrydes-zh{
+
+.font-industrydes-zh {
 	font-size: 1.5vw;
-	font-family:"幼圆","微软雅黑","宋体";
+	font-family: "幼圆", "微软雅黑", "宋体";
 	margin-left: 2vw;
 	/*letter-spacing: 0.2vw;*/
 	line-height: 2.5vw;
 	margin-right: 6vw;
 	color: whitesmoke;
 }
-.font-mian-module-zh{
-	font-family:"幼圆","微软雅黑","宋体";
+
+.font-mian-module-zh {
+	font-family: "幼圆", "微软雅黑", "宋体";
 	font-size: 3.5vw;
 }
-.font-mainT-zh{
-	font-family:"幼圆","微软雅黑","宋体";
+
+.font-mainT-zh {
+	font-family: "幼圆", "微软雅黑", "宋体";
 	font-size: 2.5vw;
 }
-.font-main-description-zh{
-	font-family:"幼圆","微软雅黑","宋体";
+
+.font-main-description-zh {
+	font-family: "幼圆", "微软雅黑", "宋体";
 	font-size: 1.5vw;
 	text-indent: 2vw;
 	line-height: 2.5vw
 }
-.font-submodule-zh{
-	font-family:"幼圆","微软雅黑","宋体";
+
+.font-submodule-zh {
+	font-family: "幼圆", "微软雅黑", "宋体";
 	font-size: 3vw;
 }
-.font-sub-nav-zh{
-	font-family:"幼圆","微软雅黑","宋体";
+
+.font-sub-nav-zh {
+	font-family: "幼圆", "微软雅黑", "宋体";
 	font-size: 1.5vw;
 }
-.font-sub-type-zh{
-	font-family:"幼圆","微软雅黑","宋体";
+
+.font-sub-type-zh {
+	font-family: "幼圆", "微软雅黑", "宋体";
 	font-size: 2.75vw;
-	
-}
-.font-sub-typedes-zh{
-	font-size: 1.75vw;
-	font-family:"幼圆","微软雅黑","宋体";
-	margin-left: 2vw;
-	
-	line-height: 2.5vw;
-	
 }
 
-.font-nav-ru{
+.font-sub-typedes-zh {
+	font-size: 1.75vw;
+	font-family: "幼圆", "微软雅黑", "宋体";
+	margin-left: 2vw;
+	line-height: 2.5vw;
+}
+
+.font-nav-ru {
 	color: #000000;
 	/*color: green;*/
 	font-size: 1.35vw;
 	/*font-weight: bold;*/
-	font-family:"Arial","Lucida Sans", "sans-serif";
+	font-family: "Arial", "Lucida Sans", "sans-serif";
 }
-.font-industry-ru{
+
+.font-industry-ru {
 	font-size: 4.45vw;
 	font-weight: bold;
-	font-family:"Arial","Lucida Sans", "sans-serif";
+	font-family: "Arial", "Lucida Sans", "sans-serif";
 }
-.font-industrydes-ru{
+
+.font-industrydes-ru {
 	font-size: 1.3vw;
-	font-family:"Arial","Lucida Sans", "sans-serif";
-	 
+	font-family: "Arial", "Lucida Sans", "sans-serif";
 	/*letter-spacing: 0.2vw;*/
 	line-height: 2.5vw;
 	color: whitesmoke;
-	
 }
-.font-mian-module-ru{
-	font-family: "impact", "Arial","Lucida Sans", "sans-serif";
-	font-weight:700;
+
+.font-mian-module-ru {
+	font-family: "impact", "Arial", "Lucida Sans", "sans-serif";
+	font-weight: 700;
 	font-size: 3vw;
 	display: inline-block;
 	padding-top: 0.3vw;
 }
-.font-mainT-ru{
-	font-family:"Arial","Lucida Sans", "sans-serif";
+
+.font-mainT-ru {
+	font-family: "Arial", "Lucida Sans", "sans-serif";
 	font-size: 1.75vw;
-	
 }
-.font-main-description-ru{
-	font-family:"Arial","Lucida Sans", "sans-serif";
+
+.font-main-description-ru {
+	font-family: "Arial", "Lucida Sans", "sans-serif";
 	font-size: 1.15vw;
 	line-height: 2vw
 }
-.font-submodule-ru{
-	font-family:"Arial","Lucida Sans", "sans-serif";
+
+.font-submodule-ru {
+	font-family: "Arial", "Lucida Sans", "sans-serif";
 	font-size: 2.25vw;
 	font-weight: 700;
 }
-.font-sub-nav-ru{
-	font-family:"Arial","Lucida Sans", "sans-serif";
+
+.font-sub-nav-ru {
+	font-family: "Arial", "Lucida Sans", "sans-serif";
 	font-size: 1.25vw;
 	line-height: 1.5vw;
 	margin-top: 0.5vw;
 	display: inline-block;
-	vertical-align:middle
+	vertical-align: middle
 }
-.font-sub-type-ru{
-	font-family:"Arial","Lucida Sans", "sans-serif";
+
+.font-sub-type-ru {
+	font-family: "Arial", "Lucida Sans", "sans-serif";
 	font-size: 1.5vw;
 	line-height: 2vw;
 	font-weight: 700;
 	display: inline-block;
-	
 }
-.font-sub-typedes-ru{
+
+.font-sub-typedes-ru {
 	font-size: 1.25vw;
-	font-family:"Arial","Lucida Sans", "sans-serif";
+	font-family: "Arial", "Lucida Sans", "sans-serif";
 	/*color: darkgrey;*/
 	margin-left: 2vw;
 	line-height: 1.75vw;
 }
-h1,h2,h3,h4,h5,h6{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	position: absolute;
+	word-break: break-all;
+	line-height: 0;
 	visibility: hidden;
 	z-index: -100;
 }
+
+
 /*header*/
+
 .top {
 	height: 19vw;
 	background-color: #C0542B;
 	z-index: 10000;
-	
 	/*border: 1px solid yellow;*/
 }
 
@@ -386,7 +416,6 @@ h1,h2,h3,h4,h5,h6{
 	position: relative;
 }
 
-
 .navigation-item-box {
 	margin: 0px;
 	height: 2.2vw;
@@ -414,13 +443,15 @@ h1,h2,h3,h4,h5,h6{
 	float: right;
 }
 
-.ib,.link-list {
+.ib,
+.link-list {
 	display: -moz-inline-stack;
 	display: inline-block;
 	zoom: 1;
 	*display: inline;
 	vertical-align: top;
 }
+
 .navigation-item,
 .navigation-item2 {
 	/*font-size: 1.4vw;*/
@@ -439,7 +470,8 @@ h1,h2,h3,h4,h5,h6{
 	transition: color .2s ease-in-out;*/
 	padding-bottom: 0.3vw;
 }
-.navigation-link2{
+
+.navigation-link2 {
 	display: none;
 	position: relative;
 	padding-top: 1vw;
@@ -453,13 +485,15 @@ h1,h2,h3,h4,h5,h6{
 	background-color: rgba(192, 84, 43, 0.8);
 	border-bottom: 1px solid #C0542B;
 }
-.navigation-link2:before{
+
+.navigation-link2:before {
 	content: "";
 	position: absolute;
 	bottom: 0.5vw;
 	width: 0;
 	border-bottom: solid 0.1vw;
 }
+
 .navigation-link:before {
 	content: "";
 	position: absolute;
@@ -467,19 +501,23 @@ h1,h2,h3,h4,h5,h6{
 	width: 0;
 	border-bottom: solid 0.1vw;
 }
+
 .navigation-link2:before,
 .navigation-link:before {
 	left: 0;
 }
+
 .navigation-link2:hover,
 .navigation-link:hover {
 	color: greenyellow;
 	/*margin-top: -1vw;*/
 }
+
 .navigation-link2:hover:before,
 .navigation-link:hover:before {
 	width: 100%;
 }
+
 .navigation-link2:before,
 .navigation-link:before {
 	-webkit-transition: width .2s ease-in-out;
@@ -492,84 +530,95 @@ h1,h2,h3,h4,h5,h6{
 	position: absolute;
 	height: 0.2vw;
 	width: 1%;
-	background-color:#00F5FF;
+	background-color: #00F5FF;
 	/*background-color: #FF0000;*/
 	z-index: 5000;
 }
+
+
 /*header end*/
+
+
 /*bottom*/
+
 .bottom {
 	height: 18.5vw;
 	background-color: #C0542B;
-	padding-top:6vw;
+	padding-top: 6vw;
 	font-family: 'Lucida Sans';
 	/*border: 1px solid green;*/
-	
 	color: #FFFFFF;
-	
 	vertical-align: middle;
-	
 }
+
 .email {
 	word-spacing: 0.5vw;
 	font-size: 1.2vw;
 	float: left;
 	padding-left: 8vw;
 	/*border: 1px solid green;*/
-	
 }
-.email img{
+
+.email img {
 	height: 3.5vw;
 	width: 3.2vw;
 	vertical-align: middle;
 }
-.tel{
+
+.tel {
 	word-spacing: 0.5vw;
 	font-size: 1.2vw;
 	float: left;
-	width:50%;
+	width: 50%;
 	text-align: right;
 	padding-right: 8vw;
 	/*border: 1px solid green;*/
 }
-.tel img{
+
+.tel img {
 	height: 3vw;
 	width: 3vw;
 	vertical-align: middle;
 }
+
 .copyright {
 	text-align: center;
 	clear: both;
 	margin-top: 8vw;
 	font-size: 1.5vw;
-	
 	/*border: 1px solid green;*/
 }
+
 
 /*bottom end*/
 
 
 /*animation*/
+
 .pt-page-moveToRight {
 	-webkit-animation: moveToRight .6s ease both;
 	-moz-animation: moveToRight .6s ease both;
 	animation: moveToRight .6s ease both;
 }
+
 .pt-page-moveFromLeft {
 	-webkit-animation: moveFromLeft .6s ease both;
 	-moz-animation: moveFromLeft .6s ease both;
 	animation: moveFromLeft .6s ease both;
 }
+
 .pt-page-moveToLeft {
 	-webkit-animation: moveToLeft .6s ease both;
 	-moz-animation: moveToLeft .6s ease both;
 	animation: moveToLeft .6s ease both;
 }
+
 .pt-page-moveFromRight {
 	-webkit-animation: moveFromRight .6s ease both;
 	-moz-animation: moveFromRight .6s ease both;
 	animation: moveFromRight .6s ease both;
 }
+
 .pt-page-flipOutRight {
 	-webkit-transform-origin: 50% 50%;
 	-webkit-animation: flipOutRight .5s both ease-in;
@@ -578,6 +627,7 @@ h1,h2,h3,h4,h5,h6{
 	transform-origin: 50% 50%;
 	animation: flipOutRight .5s both ease-in;
 }
+
 .pt-page-flipInLeft {
 	-webkit-transform-origin: 50% 50%;
 	-webkit-animation: flipInLeft .5s both ease-out;
@@ -586,65 +636,187 @@ h1,h2,h3,h4,h5,h6{
 	transform-origin: 50% 50%;
 	animation: flipInLeft .5s both ease-out;
 }
+
 .pt-page-delay500 {
 	-webkit-animation-delay: .5s;
 	-moz-animation-delay: .5s;
 	animation-delay: .5s;
 }
 
-@-webkit-keyframes moveToRight { 
-	to { -webkit-transform: translateX(100%); }
+@-webkit-keyframes moveToRight {
+	to {
+		-webkit-transform: translateX(100%);
+	}
 }
-@-moz-keyframes moveToRight { 
-	to { -moz-transform: translateX(100%); }
+
+@-moz-keyframes moveToRight {
+	to {
+		-moz-transform: translateX(100%);
+	}
 }
-@keyframes moveToRight { 
-	to { transform: translateX(100%); }
+
+@keyframes moveToRight {
+	to {
+		transform: translateX(100%);
+	}
 }
 
 @-webkit-keyframes moveFromLeft {
-	from { -webkit-transform: translateX(-100%); }
+	from {
+		-webkit-transform: translateX(-100%);
+	}
 }
+
 @-moz-keyframes moveFromLeft {
-	from { -moz-transform: translateX(-100%); }
+	from {
+		-moz-transform: translateX(-100%);
+	}
 }
+
 @keyframes moveFromLeft {
-	from { transform: translateX(-100%); }
+	from {
+		transform: translateX(-100%);
+	}
 }
+
 @-webkit-keyframes moveToLeft {
-	to { -webkit-transform: translateX(-100%); }
+	to {
+		-webkit-transform: translateX(-100%);
+	}
 }
+
 @-moz-keyframes moveToLeft {
-	to { -moz-transform: translateX(-100%); }
+	to {
+		-moz-transform: translateX(-100%);
+	}
 }
+
 @keyframes moveToLeft {
-	to { transform: translateX(-100%); }
+	to {
+		transform: translateX(-100%);
+	}
 }
+
 @-webkit-keyframes moveFromRight {
-	from { -webkit-transform: translateX(100%); }
+	from {
+		-webkit-transform: translateX(100%);
+	}
 }
+
 @-moz-keyframes moveFromRight {
-	from { -moz-transform: translateX(100%); }
+	from {
+		-moz-transform: translateX(100%);
+	}
 }
+
 @keyframes moveFromRight {
-	from { transform: translateX(100%); }
+	from {
+		transform: translateX(100%);
+	}
 }
+
 @-webkit-keyframes flipOutRight {
-	to { -webkit-transform: translateZ(-1000px) rotateY(90deg); opacity: 0.2; }
+	to {
+		-webkit-transform: translateZ(-1000px) rotateY(90deg);
+		opacity: 0.2;
+	}
 }
+
 @-moz-keyframes flipOutRight {
-	to { -moz-transform: translateZ(-1000px) rotateY(90deg); opacity: 0.2; }
+	to {
+		-moz-transform: translateZ(-1000px) rotateY(90deg);
+		opacity: 0.2;
+	}
 }
+
 @keyframes flipOutRight {
-	to { transform: translateZ(-1000px) rotateY(90deg); opacity: 0.2; }
+	to {
+		transform: translateZ(-1000px) rotateY(90deg);
+		opacity: 0.2;
+	}
 }
+
 @-webkit-keyframes flipInLeft {
-	from { -webkit-transform: translateZ(-1000px) rotateY(-90deg); opacity: 0.2; }
+	from {
+		-webkit-transform: translateZ(-1000px) rotateY(-90deg);
+		opacity: 0.2;
+	}
 }
+
 @-moz-keyframes flipInLeft {
-	from { -moz-transform: translateZ(-1000px) rotateY(-90deg); opacity: 0.2; }
+	from {
+		-moz-transform: translateZ(-1000px) rotateY(-90deg);
+		opacity: 0.2;
+	}
 }
+
 @keyframes flipInLeft {
-	from { transform: translateZ(-1000px) rotateY(-90deg); opacity: 0.2; }
+	from {
+		transform: translateZ(-1000px) rotateY(-90deg);
+		opacity: 0.2;
+	}
 }
+
+
 /*animation end*/
+
+
+/*for phone*/
+
+@media (max-width: 512px) and (-webkit-min-device-pixel-ratio:2) {
+	.navigation-item,
+	.navigation-item2 {
+		font-size: 1.4vw;
+		min-width: 5vw;
+		margin: 0px;
+	}
+	.navigation-link {
+		display: block;
+		position: relative;
+		padding-left: 1vw;
+		padding-right: 1vw;
+		text-decoration: none;
+		color: #FFFFFF;
+		padding-bottom: 0.3vw;
+	}
+	.navigation-link2 {
+		display: none;
+		position: relative;
+		padding-top: 1vw;
+		padding-left: 1vw;
+		padding-right: 1vw;
+		text-decoration: none;
+		color: #FFFFFF;
+		padding-bottom: 0.8vw;
+		background-color: rgba(192, 84, 43, 0.8);
+		border-bottom: 1px solid #C0542B;
+	}
+	.font-mian-module-zh,
+	.font-mian-module-ru,
+	.font-mian-module-en {
+		margin-top: -0.5vw;
+		font-size: 2.5vw;
+	}
+	.font-mainT-ru,
+	.font-mainT-zh,
+	.font-mainT-en {
+		font-size: 1.5vw;
+	}
+	.font-main-description-ru,
+	.font-main-description-zh,
+	.font-main-description-en {
+		font-size: 1vw;
+	}
+	.font-sub-nav-ru,
+	.font-sub-nav-zh,
+	.font-sub-nav-en {
+		font-size: 1vw;
+		line-height: 1.25vw;
+	}
+	.font-sub-nav-zh{
+		margin-top: 1vw;
+	}
+}
+
+
+/*for phone end*/
